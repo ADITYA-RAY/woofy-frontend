@@ -130,13 +130,28 @@ nav .logo {
   left: 0;
   width: 100%;
   height: 100%;
+  opacity: 1;
   background-image: url("https://lilo.qodeinteractive.com/wp-content/uploads/2018/05/h1-slider-backround-2.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   display: block;
   z-index: -1;
+  transition: 1s ease;
 }
+.heroback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    z-index: -2;
+  }
 .herocloud1 img {
   position: absolute;
   top: 150px;
@@ -167,6 +182,8 @@ nav .logo {
   }
 }
 .herotxt {
+  display: block;
+  opacity: 1;
   position: absolute;
   top: 30%;
   left: 60px;
@@ -177,6 +194,7 @@ nav .logo {
   font-family: "Baloo 2", cursive;
   line-height: 1.1;
   padding: 10px;
+  transition: 1s ease-in-out;
 }
 .herodesc {
   color: rgb(79, 81, 116);
@@ -194,7 +212,7 @@ nav .logo {
   }
 }
 
-.loginbtn a {
+.loginbtn button {
   display: block;
   text-decoration: none;
   font-size: 25px;
@@ -207,8 +225,9 @@ nav .logo {
   border-radius: 10px;
   font-weight: 700;
   transition: 0.7s ease-in-out;
+  border: none;
 }
-.loginbtn a:hover {
+.loginbtn button:hover {
   color: white;
   background-image: linear-gradient(45deg, rgb(3, 0, 165), rgb(0, 115, 223));
   transform: scaleX(1.1);
@@ -216,3 +235,167 @@ nav .logo {
 
 /*--------------------------------hero section ends-------------------------------------------------------------*/
 
+/*-----------------------login form starts -------------------*/
+.loginwrap {
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    width: 40%;
+    left: 120px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #cfcfcf;
+    font-family: "Baloo 2", cursive;
+    line-height: 1.1;
+    padding: 40px auto 10px auto;
+    transition: 1.5s ease-in-out;
+    display: none;
+    text-align: center;
+    z-index: 100;
+
+  }
+  @media screen and (max-width: 600px) {
+    .loginwrap {
+       height: 100%;
+        top: 0%;
+        width: 100%;
+        left: 0px;
+        padding: 20% 20px 20px 20px;
+    background: rgba(0, 0, 0, 0.747);
+      }
+  }
+  .loginwrap input{
+      background: none;
+      border: 2px solid rgba(255, 114, 236, 0.842);
+      border-radius: 20px;
+      color: white;
+      width: 300px;
+      display: block;
+      margin: 30px auto;
+      padding: 10px 17px;
+      transition: 1s ease-in-out;
+  }
+   
+
+  .loginwrap input:focus{
+      outline: none;
+      border: 2px solid rgb(0, 238, 255);
+  }
+  
+  .loginwrap input::placeholder{
+      color: rgba(201, 201, 201, 0.568);
+      text-align: center;
+  }
+
+  .loginsumbit{
+      font-size: 25px;
+      font-weight: 900;
+      background: linear-gradient(45deg,rgba(255, 114, 236, 0.644),rgba(209, 11, 183, 0.644));
+      border: none;
+      padding: 13px 40px;
+      color: white;
+      border-radius: 20px;
+      transition: 0.5s ease-in-out;
+
+  }
+  .loginsumbit:hover{
+      transform: rotate(360deg);
+      background: linear-gradient(45deg,rgba(0, 108, 141, 0.644),rgba(0, 225, 255, 0.644));
+  }
+
+  .usericon{
+      font-size: 50px;
+      padding: 20px;
+      color:pink;
+      border-radius: 30px;
+      margin-bottom: -40px;
+      background: linear-gradient(45deg,rgba(255, 114, 236, 0.644),rgba(209, 11, 183, 0.644));
+      
+  }
+  .reg{
+      background: none;
+      border: none;
+      color: rgb(255, 238, 0);
+  }
+  .reg:hover{
+      border-bottom: 2px solid rgb(255, 238, 0);
+  }
+  .loginclose{
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 30px;
+      padding: 20px;
+      display: block;
+  }
+/*-----------------------login form ends -------------------*/
+
+/*-----------------------registration form starts -------------------*/
+.signupwrap {
+    opacity: 0;
+    position: absolute;
+    top: 7%;
+    width: 40%;
+    left: 120px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #cfcfcf;
+    font-family: "Baloo 2", cursive;
+    line-height: 1.1;
+    padding: 40px auto 10px auto;
+    transition: 1.5s ease-in-out;
+    display: none;
+    text-align: center;
+    z-index: 100;
+
+  }
+  @media screen and (max-width: 600px) {
+    .signupwrap {
+       height: 100%;
+        top: 0%;
+        width: 100%;
+        left: 0px;
+        padding: 10% 20px 20px 20px;
+    background: rgba(0, 0, 0, 0.747);
+      }
+  }
+  .signupwrap input{
+      background: none;
+      border: 2px solid rgba(255, 114, 236, 0.842);
+      border-radius: 20px;
+      color: white;
+      width: 300px;
+      display: block;
+      margin: 20px auto;
+      padding: 10px 17px;
+      transition: 1s ease-in-out;
+  }
+   
+
+  .signupwrap input:focus{
+      outline: none;
+      border: 2px solid rgb(0, 238, 255);
+  }
+  
+  .signupwrap input::placeholder{
+      color: rgba(201, 201, 201, 0.568);
+      text-align: center;
+  }
+
+  .signupumbit{
+      font-size: 25px;
+      font-weight: 900;
+      background: linear-gradient(45deg,rgba(255, 114, 236, 0.644),rgba(209, 11, 183, 0.644));
+      border: none;
+      padding: 13px 40px;
+      color: white;
+      border-radius: 20px;
+      transition: 0.5s ease-in-out;
+
+  }
+  .signupsumbit:hover{
+      transform: rotate(360deg);
+      background: linear-gradient(45deg,rgba(0, 108, 141, 0.644),rgba(0, 225, 255, 0.644));
+  }
+
+/*-----------------------registration form ends -------------------*/
