@@ -14,6 +14,9 @@ body {
 
 /* navbar */
 
+ol, ul {
+    padding-left: 0px !important;
+  }
 .logo {
   font-family: "Baloo 2", cursive;
   font-size: larger;
@@ -36,7 +39,7 @@ nav .mainMenu li a {
   text-transform: uppercase;
   color: black;
   font-size: 1.5rem;
-  margin: 0 0 0 4rem;
+  margin: 0 0 0 0;
   font-family: "Baloo 2", cursive;
 }
 nav .mainMenu li a:hover {
@@ -78,7 +81,7 @@ nav .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(171, 171, 226, 50%);
+    background: rgba(129, 185, 231, 0.918);
     color: black;
     transition: top 1s ease;
     display: none;
