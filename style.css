@@ -11,6 +11,109 @@ html,body{
     box-sizing: border-box;
 }
 
+/* navbar */
+
+.logo {
+  font-family: "Baloo 2", cursive;
+  font-size: larger;
+}
+
+nav {
+  color: black;
+  display: flex;
+  /* justify-content: space-between; */
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.5rem;
+  margin: 0 0 0 4rem;
+  font-family: "Baloo 2", cursive;
+}
+nav .mainMenu li a:hover {
+  background-color: rgb(243, 107, 152);
+  color: white !important;
+  transition: 0.25s ease-out;
+  -webkit-transition: 0.25s ease-out;
+  -moz-transition: 0.25s ease-out;
+  -ms-transition: 0.25s ease-out;
+  -o-transition: 0.25s ease-out;
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+
+nav .logo {
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(171, 171, 226, 20%);
+    color: black;
+    transition: top 1s ease;
+    display: none;
+    -webkit-transition: top 1s ease;
+    -moz-transition: top 1s ease;
+    -ms-transition: top 1s ease;
+    -o-transition: top 1s ease;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: rgb(243, 107, 152);
+    color: white;
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+
+/* ----------------------------------navbar ends--------------------------------- */
+
 /*--------------------------------hero section starts-------------------------------------------------------------*/
 .topcontainer{
     width: 100%;
