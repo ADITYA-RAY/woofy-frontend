@@ -1,14 +1,15 @@
-body{
-    margin: 0;
-    font-family: sans-serif;
-    overflow-x: hidden;
-    overflow-y: scroll;
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 /* navbar */
@@ -22,6 +23,7 @@ nav {
   color: black;
   display: flex;
   /* justify-content: space-between; */
+  z-index: 1;
 }
 nav .mainMenu {
   display: flex;
@@ -59,7 +61,6 @@ nav .mainMenu .closeMenu,
   cursor: pointer;
 }
 
-
 nav .logo {
   margin: 6px;
   font-size: 25px;
@@ -77,7 +78,7 @@ nav .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(171, 171, 226, 20%);
+    background: rgba(171, 171, 226, 50%);
     color: black;
     transition: top 1s ease;
     display: none;
@@ -100,6 +101,7 @@ nav .logo {
 
   nav .openMenu {
     display: block;
+    z-index: +1 !important;
   }
   nav .mainMenu li a:hover {
     background: rgb(243, 107, 152);
@@ -115,94 +117,99 @@ nav .logo {
 /* ----------------------------------navbar ends--------------------------------- */
 
 /*--------------------------------hero section starts-------------------------------------------------------------*/
-.topcontainer{
-    width: 100%;
-    height: 100%;
-background: blue;
+.topcontainer {
+  width: 100%;
+  height: 100%;
 }
-.hero{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("https://lilo.qodeinteractive.com/wp-content/uploads/2018/05/h1-slider-backround-2.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: block;
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://lilo.qodeinteractive.com/wp-content/uploads/2018/05/h1-slider-backround-2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: block;
+  z-index: -1;
 }
-.herocloud1 img{
-    position: absolute;
-    top: 150px;
-    left: -100px;
-    width: 300px;
+.herocloud1 img {
+  position: absolute;
+  top: 150px;
+  left: -100px;
+  width: 300px;
 }
-.herocloud2 img{
-    position: absolute;
-    bottom: 40px;
-    left: 10px;
-    width: 120px;
+.herocloud2 img {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  width: 120px;
 }
-.herocloud3 img{
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    width: 66px;
-    animation: spin 2s infinite linear ;
+.herocloud3 img {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 66px;
+  animation: spin 2s infinite linear;
 }
 @-webkit-keyframes spin {
-    50% { transform: scale(1.2); }
+  50% {
+    transform: scale(1.2);
+  }
 }
 @keyframes spin {
-    50% { transform: scale(1.2); }
+  50% {
+    transform: scale(1.2);
+  }
 }
-.herotxt{
-    position: absolute;
-    top: 30%;
-    left: 60px;
-    width: 42%;
-    font-size: 60px;
-    font-weight: 800;
-    color: #32355d;
-    font-family: 'Baloo 2', cursive;
-    line-height: 1.1;
-    padding: 10px;
+.herotxt {
+  position: absolute;
+  top: 30%;
+  left: 60px;
+  width: 42%;
+  font-size: 60px;
+  font-weight: 800;
+  color: #32355d;
+  font-family: "Baloo 2", cursive;
+  line-height: 1.1;
+  padding: 10px;
 }
-.herodesc{
-    color: rgb(79, 81, 116);
-    font-size: 20px;
-    font-weight: 500;
+.herodesc {
+  color: rgb(79, 81, 116);
+  font-size: 20px;
+  font-weight: 500;
 }
-@media screen and (max-width:600px){
-    .herotxt{
-        left: 10px;
-        width: 100%;
-    }
-    .herocloud3 img{
-        top: 40px;
-        right: 70%;
-    }
+@media screen and (max-width: 600px) {
+  .herotxt {
+    left: 10px;
+    width: 100%;
+  }
+  .herocloud3 img {
+    top: 40px;
+    right: 70%;
+  }
 }
 
-.loginbtn a{
-    display: block;
-    text-decoration: none;
-    font-size: 25px;
-    background-image: linear-gradient(45deg,rgb(3, 0, 165),rgb(19, 126, 226)) ;
-    width: fit-content;
-    padding: 12px 25px;
-    margin: 31px;
-    float: right;
-    color: white;
-    border-radius: 10px;
-    font-weight: 700;
-    transition: 0.7s ease-in-out;
+.loginbtn a {
+  display: block;
+  text-decoration: none;
+  font-size: 25px;
+  background-image: linear-gradient(45deg, rgb(3, 0, 165), rgb(19, 126, 226));
+  width: fit-content;
+  padding: 12px 25px;
+  margin: 31px;
+  float: left;
+  color: white;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: 0.7s ease-in-out;
 }
-.loginbtn a:hover{
-    color: white;
-    background-image: linear-gradient(45deg,rgb(3, 0, 165),rgb(0, 115, 223)) ;
-    transform:scaleX(1.1) ;
+.loginbtn a:hover {
+  color: white;
+  background-image: linear-gradient(45deg, rgb(3, 0, 165), rgb(0, 115, 223));
+  transform: scaleX(1.1);
 }
 
 /*--------------------------------hero section ends-------------------------------------------------------------*/
+
