@@ -72,7 +72,7 @@ nav .logo {
 
 @media (max-width: 800px) {
   nav .mainMenu {
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
