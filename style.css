@@ -444,8 +444,7 @@ nav .logo {
   grid-template-columns: auto minmax(200px, 1fr);
 }
 .card-desc {
-  padding:2vh;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Baloo 2", cursive;
 }
 
