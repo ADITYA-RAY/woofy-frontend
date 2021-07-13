@@ -37,14 +37,14 @@ nav .mainMenu li a {
   padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   margin: 0 0 0 0;
   font-family: "Baloo 2", cursive;
 }
 nav .mainMenu li a:hover {
   background-color: rgb(243, 107, 152);
-  color: white !important;
+  color: rgb(255, 255, 255) !important;
   transition: 0.25s ease-out;
   -webkit-transition: 0.25s ease-out;
   -moz-transition: 0.25s ease-out;
@@ -56,6 +56,16 @@ nav .openMenu {
   margin: 20px;
   display: none;
   cursor: pointer;
+}
+
+.barsicon{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: rgb(255, 184, 184);
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 nav .mainMenu .closeMenu,
 .icons i {
@@ -81,7 +91,7 @@ nav .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(129, 185, 231, 0.918);
+    background: rgba(24, 24, 24, 0.918);
     color: black;
     transition: top 1s ease;
     display: none;
@@ -219,7 +229,7 @@ nav .logo {
   background-image: linear-gradient(45deg, rgb(3, 0, 165), rgb(19, 126, 226));
   width: fit-content;
   padding: 12px 25px;
-  margin: 31px;
+  margin: 10px;
   float: left;
   color: white;
   border-radius: 10px;
@@ -400,7 +410,40 @@ nav .logo {
 
 /*-----------------------registration form ends -------------------*/
 
+/*-----------------------------dashboard css starts----------------------------------------------*/
 
+.data{
+  margin: auto auto;
+  font-size: 50px;
+  font-weight: 700;
+}
+.unit{
+  font-size: 30px;
+  display: inline;
+}
+.c-back{
+  position: absolute;
+  bottom: -20px;
+  left: 10px;
+  font-size: 120px;
+  opacity: 0.2;
+}
+
+.logout{
+  position: absolute;
+  top: 10px;
+  right: 30px;
+ 
+}
+.logout a{
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+.logout a:hover{
+  color: #f36a92;
+}
+/*-----------------------------dashboard css ends----------------------------------------------*/
 /*-----------------features and footer------------------  */
 
 
@@ -755,4 +798,47 @@ footer {
       
     }
   
+}
+
+
+
+@media screen and (max-width:900px) {
+  .logout{
+    display: none;
+  }
+}
+
+
+
+#basic {
+  background: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  width: 250px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+
+video, #cssfilters-video, #screenshot-img {
+    width: 250px;
+    height: 200px;
+}
+audio, canvas, video {
+    display: inline-block;
+}
+
+button {
+    background: #333;
+    color: #FFF;
+    border-radius: 4px;
+    border: 0;
+    padding: 10px 14px;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+button, input {
+    line-height: normal;
 }
